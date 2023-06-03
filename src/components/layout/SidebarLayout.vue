@@ -25,7 +25,7 @@ const navItems = [
       <ul class="flex flex-col gap-3 pl-3">
         <template v-for="item in navItems" :key="item.path">
           <li
-            class="rounded-l-xl py-3 pl-3 pr-6"
+            class="rounded-l-xl py-3 pl-3 pr-6 duration-300"
             :class="
               item.path === route.fullPath
                 ? 'bg-base-dark-bg-1'
