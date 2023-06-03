@@ -1,9 +1,9 @@
-<script setup></script>
+<script setup>
+import MainLayout from "./components/layout/MainLayout.vue";
+</script>
 
 <template>
-  <h1>Credit Card</h1>
-  <div class="text-body-large">test</div>
-  <v-icon name="hi-academic-cap"></v-icon>
+  <MainLayout> </MainLayout>
 </template>
 
 <style scoped></style>

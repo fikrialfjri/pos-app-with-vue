@@ -6,6 +6,7 @@ export default {
   },
   purge: [
     "./index.html",
+    "./src/**/*.vue",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./src/*.{vue,js,ts,jsx,tsx}",
   ],
