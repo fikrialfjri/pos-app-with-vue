@@ -5,7 +5,7 @@ import SidebarLayout from "./SidebarLayout.vue";
 <template>
   <main class="relative">
     <SidebarLayout />
-    <article class="pl-[104px] min-h-screen bg-base-dark-bg-1">
+    <article class="min-h-screen bg-base-dark-bg-1 pl-[104px]">
       <router-view />
     </article>
   </main>

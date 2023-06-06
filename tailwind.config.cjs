@@ -50,8 +50,8 @@ export default {
         },
       },
       boxShadow: {
-        primary: "0px 8px 24px rgba(234, 124, 105, 0.3)",
-        secondary: "0px 8px 24px rgba(146, 136, 224, 0.3)",
+        primary: "0px 8px 24px rgba(234,124,105,0.3)",
+        secondary: "0px 8px 24px rgba(146,136,224,0.3)",
       },
       fontSize: {
         h1: [

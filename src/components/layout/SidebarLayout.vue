@@ -22,28 +22,62 @@ const navItems = [
     </header>
 
     <section class="flex flex-1 flex-col justify-between gap-3">
-      <ul class="flex flex-col gap-3 pl-3">
+      <ul class="flex flex-col gap-6 pl-3">
         <template v-for="item in navItems" :key="item.path">
           <li
-            class="rounded-l-xl py-3 pl-3 pr-6 duration-300"
+            class="relative rounded-l-xl py-3 pl-3 pr-6 duration-300"
             :class="
               item.path === route.fullPath
                 ? 'bg-base-dark-bg-1'
                 : 'bg-transparent'
             "
           >
+            <div
+              class="absolute -top-3 right-0 h-3 w-3"
+              :class="
+                item.path === route.fullPath
+                  ? 'bg-base-dark-bg-1'
+                  : 'bg-transparent'
+              "
+            >
+              <div
+                class="absolute left-0 top-0 h-3 w-3 rounded-br-full"
+                :class="
+                  item.path === route.fullPath
+                    ? 'bg-base-dark-bg-2'
+                    : 'bg-transparent'
+                "
+              />
+            </div>
             <router-link :to="item.path">
               <button
                 class="flex h-14 w-14 cursor-pointer items-center justify-center rounded-lg border-none outline-none duration-150 hover:bg-primary hover:text-white"
                 :class="
                   item.path === route.fullPath
-                    ? 'bg-primary text-white'
+                    ? 'bg-primary text-white shadow-[0_5px_15px_rgba(234,124,105,0.5)]'
                     : 'bg-transparent text-primary'
                 "
               >
                 <v-icon :name="item.icon" class="h-6 w-6" />
               </button>
             </router-link>
+            <div
+              class="absolute -bottom-3 right-0 h-3 w-3"
+              :class="
+                item.path === route.fullPath
+                  ? 'bg-base-dark-bg-1'
+                  : 'bg-transparent'
+              "
+            >
+              <div
+                class="absolute bottom-0 left-0 h-3 w-3 rounded-tr-full"
+                :class="
+                  item.path === route.fullPath
+                    ? 'bg-base-dark-bg-2'
+                    : 'bg-transparent'
+                "
+              />
+            </div>
           </li>
         </template>
       </ul>
